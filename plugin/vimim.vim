@@ -14,7 +14,7 @@ let s:VimIM  = [" ====  introduction     ==== {{{"]
 "    (1) do Chinese input without mode change: Midas touch
 "  PnP: Plug and Play
 "    (1) drop the vimim.vim to the plugin folder: plugin/vimim.vim
-"    (2) [option] drop supported datafiles, like: plugin/vimim.wubijd.txt
+"    (2) [option] drop supported datafiles, like: plugin/vimim.flypy.txt
 "  Usage: VimIM takes advantage of the definition from Vim
 "    (1) :help i_CTRL-^  Toggle the use of language      ...
 "    (2) :help i_CTRL-_  Switch between languages        ...
@@ -92,7 +92,7 @@ function! s:vimim_dictionary_keycodes()
     let s:keycodes.boshiamy = "['a-z.],[]"
     let ime  = ' pinyin_sogou pinyin_quote_sogou pinyin_huge'
     let ime .= ' pinyin_fcitx pinyin_canton pinyin_hongkong'
-    let ime .= ' wubi98 wubi2000 wubijd wubihf'
+    let ime .= ' wubi98 wubi2000 wubijd wubihf flypy'
     let s:all_vimim_input_methods = keys(s:keycodes) + split(ime)
 endfunction
 
@@ -223,7 +223,7 @@ function! s:vimim_im_chinese()
     let backend = s:backend[s:ui.root][s:ui.im]
     let title = has_key(s:keycodes, s:ui.im) ? backend.chinese : ''
     if s:ui.im =~ 'wubi'
-        for wubi in split('wubi98 wubi2000 wubijd wubihf')
+        for wubi in split('wubi98 wubi2000 wubijd wubihf flypy')
             if get(split(backend.name, '/'),-1) =~ wubi
                 let title .= s:chinese(wubi)
             endif

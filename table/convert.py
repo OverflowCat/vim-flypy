@@ -14,7 +14,7 @@ for line in lines:
         table[code].append(word)
 file.close()
 
-resultfile = open("../plugin/vimim.wubijd.txt", "w", "utf-8")
+resultfile = open("../plugin/vimim.flypy.txt", "w", "utf-8")
 for key in table:
     resultfile.write(f"{key} {' '.join(table[key])}\n")
 resultfile.close()

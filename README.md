@@ -56,7 +56,3 @@ nmap <C-Space> <C-_>
 ### vim-space 插件
 
 关于这个中英文之间的空格处理，我写了个专门处理空格的 [vim 插件](https://github.com/yuweijun/vim-space.git)，安装完之后，执行`<leader>sa`组合键就可以在中英文之间自动添加一个空格，这里的`<leader>`符在 vim 中默认是`\`，但我个人习惯都是将之映射改为逗号`,`。
-
-## plugin/vimim.wubijd.txt
-
-<del>里面五笔词汇调整了一些个人使用词语的先后顺序，如`线程`调整到`纯种`前面。</del>
