@@ -17,7 +17,7 @@ file.close()
 resultfile = open("../plugin/flypy.ywvim", "w", "utf-8")
 resultfile.write(r"""# vim:fileencoding=utf-8:list:listchars=trail\:]:
 [Description]
-Name=小鹤音形
+Name=鹤形
 MaxCodes=4
 MaxElement=0
 UsedCodes=abcdefghijklmnopqrstuvwxyz
