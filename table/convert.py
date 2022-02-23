@@ -5,6 +5,8 @@ lines = file.readlines()
 table = {}
 for line in lines:
     line = line.strip() # 换行符问题
+    if line == "hvuv=1,硊":
+        continue
     splitted = line.split(',')
     code = splitted[0].split('=')[0]
     word = splitted[1]
