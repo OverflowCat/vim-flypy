@@ -209,7 +209,7 @@ function! s:vimim_set_pumheight()
     if empty(&pumheight)
         let &pumheight = 5
         if len(s:valid_keys) > 28
-            let &pumheight = 10
+            let &pumheight = 5
         endif
     endif
     let &pumheight = &pumheight
@@ -865,7 +865,7 @@ function! s:vimim_get_from_datafile(keyboard)
     else
         let results = []
         let s:show_extra_menu = 1
-        for i in range(10)
+        for i in range(3)
             let cursor += i
             let oneline = get(backend.lines, cursor)
             let results += s:vimim_make_pairs(oneline)
