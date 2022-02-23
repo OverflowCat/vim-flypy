@@ -1,6 +1,6 @@
 # read file test.csv line by line
 from codecs import open
-file = open("./for安卓百度个性短语.ini", "r", "utf-16") # UTF-16 LE
+file = open("for安卓百度个性短语.ini", "r", "utf-16") # UTF-16 LE
 lines = file.readlines()
 table = {}
 for line in lines:
@@ -14,7 +14,55 @@ for line in lines:
         table[code].append(word)
 file.close()
 
-resultfile = open("../plugin/vimim.flypy.txt", "w", "utf-8")
+resultfile = open("../plugin/flypy.ywvim", "w", "utf-8")
+resultfile.write(r"""# vim:fileencoding=utf-8:list:listchars=trail\:]:
+[Description]
+Name=小鹤音形
+MaxCodes=4
+MaxElement=0
+UsedCodes=abcdefghijklmnopqrstuvwxyz
+WildChar=*
+NumRules=0
+EnChar=;
+PyChar=~
+
+[CharDefinition]
+
+[Punctuation]
+{ 『
+| ÷
+} 』
+~ ～
+` ・
+! ！
+# ＃
+$ ￥
+% ％
+& ※
+( （
+) ）
+* ×
++ ＋
+, ，
+- －
+. 。
+\ 、
+: ：
+; ；
+< 《
+= ＝
+> 》
+? ？
+@ ◎
+[ 【
+] 】
+^ ……
+_ ──
+" “ ”
+' ‘ ’
+
+[Main]
+""")
 for key in table:
     resultfile.write(f"{key} {' '.join(table[key])}\n")
 resultfile.close()

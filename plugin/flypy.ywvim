@@ -1,3 +1,50 @@
+# vim:fileencoding=utf-8:list:listchars=trail\:]:
+[Description]
+Name=小鹤音形
+MaxCodes=4
+MaxElement=0
+UsedCodes=abcdefghijklmnopqrstuvwxyz
+WildChar=*
+NumRules=0
+EnChar=;
+PyChar=~
+
+[CharDefinition]
+
+[Punctuation]
+{ 『
+| ÷
+} 』
+~ ～
+` ・
+! ！
+# ＃
+$ ￥
+% ％
+& ※
+( （
+) ）
+* ×
++ ＋
+, ，
+- －
+. 。
+\ 、
+: ：
+; ；
+< 《
+= ＝
+> 》
+? ？
+@ ◎
+[ 【
+] 】
+^ ……
+_ ──
+" “ ”
+' ‘ ’
+
+[Main]
 a 啊 按
 aa 阿
 aab 阿爸
