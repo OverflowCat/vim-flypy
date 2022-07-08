@@ -44,7 +44,7 @@ let g:ywvim_lockb = 1
 
 ## 使用
 
-按 <kbd>Ctrl</kbd> + <kbd>\</kbd> 可以启用输入法，按 <kbd>Ctrl</kbd> + <kbd>6</kbd> 可以切换输入方案。
+按 <kbd>Ctrl</kbd> + <kbd>\\</kbd> 可以启用输入法，按 <kbd>Ctrl</kbd> + <kbd>6</kbd> 可以切换输入方案。
 
 ### 英文输入
 
